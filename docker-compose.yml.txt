@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  apache:
+    image: httpd:latest
+    container_name: jogo_cobrinha
+    ports:
+    - '80:80'
+    volumes:
+    - ./data/apache:/usr/local/apache2/htdocs
